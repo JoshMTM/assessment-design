@@ -23,8 +23,56 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.title {
+  width: 100%;
+  background-color: lightblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 1.5px;
+}
+
+.title > h3 {
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: skyblue;
+}
+.caroussel {
+  padding: 50px;
+}
 
 .rating-description {
   display: flex;
   justify-content: space-between;
+}
+
+/*  stars and ratings */
+
+.stars {
+  display: flex;
+}
+
+.stars.disabled {
+  pointer-events: none;
+}
+.stars a {
+  opacity: 50%;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.stars:hover a {
+  opacity: 100%;
+}
+
+.stars a:hover {
+  opacity: 100%;
+}
+
+.stars a:hover ~ a {
+  opacity: 50%;
+}
+.stars a.active {
+  opacity: 100%;
 }
