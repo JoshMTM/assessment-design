@@ -60,6 +60,10 @@ h3 {
   justify-content: space-evenly;
 }
 
+.stars2 {
+  display: none;
+}
+
 .stars.disabled {
   pointer-events: none;
   opacity: 50%;

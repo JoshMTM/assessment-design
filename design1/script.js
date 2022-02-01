@@ -38,10 +38,20 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
-  console.log(dots);
+  console.log(n);
   if (n > slides.length) {
     slideIndex = 1;
   }
+  if (n == slides.length) {
+    console.log(stars);
+    hideStars();
+  }
+  function hideStars() {
+    stars.classList.remove("stars");
+    stars.classList.add("stars2");
+    console.log("here we go");
+  }
+
   if (n < 1) {
     slideIndex = slides.length;
   }
