@@ -43,9 +43,16 @@ h3 {
   background-color: skyblue;
   padding: 10px;
   width: 800px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .caroussel {
   padding: 50px;
+}
+
+.mySlides > img {
+  border-radius: 10px;
+  height: 90%;
 }
 
 .rating-description {
@@ -169,7 +176,46 @@ h3 {
   }
 }
 
-#finish-check {
-  width: 100px;
-  display: none;
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 600px;
+    background-color: rgb(46, 248, 255);
+  }
+  .slideshow-container {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 500px;
+    background-color: rgb(119, 253, 235);
+    height: 500px;
+  }
+  .slideshow-container {
+    height: 350px;
+  }
+  .next {
+    top: 180px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 0.7rem;
+  }
+  .container {
+    background-color: rgb(52, 192, 202);
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .slideshow-container {
+    height: 200px;
+  }
+  .next {
+    top: 100px;
+  }
 }
