@@ -4,10 +4,6 @@ let next = document.querySelector(".next");
 let slideIndex = 1;
 showSlides(slideIndex);
 
-next.addEventListener("click", () => {
-  plusSlides(1);
-});
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
