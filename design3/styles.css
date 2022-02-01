@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background-image: url("./images/bgsky.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 1.5px;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  align-items: center;
+}
+.container {
+  background-color: skyblue;
+  padding: 10px;
+  width: 800px;
+}
+.caroussel {
+  padding: 50px;
+}
+
+.rating-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  stars and ratings */
+
+.stars {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stars2 {
+  display: none;
+}
+
+.stars.disabled {
+  pointer-events: none;
+  opacity: 50%;
+}
+.stars a {
+  opacity: 50%;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.stars:hover a {
+  opacity: 100%;
+}
+
+.stars a:hover {
+  opacity: 100%;
+}
+
+.stars a:hover ~ a {
+  opacity: 50%;
+}
+.stars a.active {
+  opacity: 100%;
+}
+
+/* caroussel */
+* {
+  box-sizing: border-box;
+}
+
+/* caroussel container */
+.slideshow-container {
+  max-width: 100vw;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  /* so the image won't be strecthed */
+  overflow: hidden;
+  height: 500px;
+  padding: 40px;
+}
+
+/* Next buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit of opacity */
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 600px;
+    background-color: rgb(46, 248, 255);
+  }
+  .slideshow-container {
+    height: 450px;
+  }
+}
+
+.mySlides > img {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 500px;
+    background-color: rgb(119, 253, 235);
+    height: 500px;
+  }
+  .slideshow-container {
+    height: 350px;
+  }
+  .next {
+    top: 180px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 0.7rem;
+  }
+  .container {
+    background-color: rgb(52, 192, 202);
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .slideshow-container {
+    height: 200px;
+  }
+  .next {
+    top: 100px;
+  }
+}
+
+/* Drag and drop */
+
+.columns {
+  margin: 0 auto;
+  background: darkturquoise;
+  width: 800px;
+  padding: 20px;
+}
+
+.card {
+  width: 32%;
+  display: inline-block;
+  margin-right: 1.2%;
+  height: 120px;
+  text-align: center;
+  border: 3px dashed black;
+}
+
+:last-child {
+  margin-right: 0;
+}
+
+:nth-child(2) {
+  background: none;
+}
+
+:nth-child(3) {
+  background: none;
+}
