@@ -60,6 +60,10 @@ h3 {
   justify-content: space-evenly;
 }
 
+.stars2 {
+  display: none;
+}
+
 .stars.disabled {
   pointer-events: none;
   opacity: 50%;
@@ -96,6 +100,27 @@ h3 {
   height: 500px;
   position: relative;
   margin: auto;
+}
+
+.cats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.cats > a {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cats > h4 {
+  margin-top: 0;
 }
 
 /* Hide the images by default */

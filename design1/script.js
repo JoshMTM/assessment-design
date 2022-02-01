@@ -16,14 +16,13 @@ stars.forEach((star, clickedIdx) => {
 
 //Image caroussel control logic
 let next = document.querySelector(".next");
-let dots = document.querySelectorAll(".dot");
+const desc = document.querySelector(".rating-description");
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
 next.addEventListener("click", () => {
   plusSlides(1);
-  console.log("is this being clicked?");
 });
 
 // Next/previous controls
@@ -31,25 +30,13 @@ function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
-  console.log(n);
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n == slides.length) {
-    console.log(stars);
-    hideStars();
-  }
-  function hideStars() {
-    stars.classList.remove("stars");
-    stars.classList.add("stars2");
-    console.log("here we go");
+  if (n >= 6) {
+    slideIndex = 6;
+    starWrapper.style.display = "none";
+
+    desc.style.display = "none";
   }
 
   if (n < 1) {

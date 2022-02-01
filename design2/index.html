@@ -4,61 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design2</title>
-    <link rel="stylesheet" href="styles.css" class="rel" />
+    <title>Design1</title>
+    <link rel="stylesheet" href="styles.css" class="styles" />
   </head>
   <body>
     <main>
+      <div class="title">
+        <h3>How inspired do you feel about this quote?</h3>
+      </div>
       <div class="container">
-        <main>
-          <div class="title">
-            <h3>How do you feel about this quote?</h3>
+        <!-- Caroussel container -->
+        <div class="slideshow-container">
+          <!-- Full-width images => So if we change the container/caroussel size the img will fit automatically -->
+          <div class="mySlides fade">
+            <img src="./images/img_statement_1.png" style="width: 100%" />
           </div>
-          <div class="container">
-            <!-- Caroussel container -->
-            <div class="slideshow-container">
-              <!-- Full-width images => So if we change the container/caroussel size the img will fit automatically -->
-              <div class="mySlides fade">
-                <img src="./images/img_statement_1.png" style="width: 100%" />
-              </div>
 
-              <div class="mySlides fade">
-                <img src="./images/img_statement_2.png" style="width: 100%" />
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./images/img_statement_3.png" style="width: 100%" />
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./images/img_statement_4.png" style="width: 100%" />
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./images/img_statement_5.png" style="width: 100%" />
-              </div>
-              <!-- Next buttons / It doesn't have a prev. btn because we want to save the user's vote -->
-              <a class="next">&#10095;</a>
-            </div>
-            <br />
-            <div class="stars">
-              <a
-                ><img src="./images/img_cat_happy.png" width="50px" alt="str"
-              /></a>
-              <a
-                ><img src="./images/img_cat_neutral.png" width="50px" alt="str"
-              /></a>
-              <a
-                ><img
-                  src="./images/img_cat_supersad.png"
-                  width="50px"
-                  alt="str"
-              /></a>
-            </div>
+          <div class="mySlides fade">
+            <img src="./images/img_statement_2.png" style="width: 100%" />
           </div>
-        </main>
-        <script src="script.js"></script>
+
+          <div class="mySlides fade">
+            <img src="./images/img_statement_3.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/img_statement_4.png" style="width: 100%" />
+          </div>
+
+          <!-- Next buttons / It doesn't have a prev. btn because we want to save the user's vote -->
+          <a class="next">&#10095;</a>
+        </div>
+        <br />
+        <div class="stars">
+          <div class="cats">
+            <a
+              ><img src="./images/img_cat_happy.png" width="50px" alt="str"
+            /></a>
+            <h4>Hiss</h4>
+          </div>
+          <div class="cats">
+            <a
+              ><img src="./images/img_cat_neutral.png" width="50px" alt="str"
+            /></a>
+            <h4>Meow</h4>
+          </div>
+          <div class="cats">
+            <a
+              ><img src="./images/img_cat_supersad.png" width="50px" alt="str"
+            /></a>
+            <h4>Prrr</h4>
+          </div>
+        </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
